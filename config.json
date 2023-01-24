@@ -1,0 +1,52 @@
+{
+    "energy_min": 0.1,
+    "energy_max": 1.0,
+    "energy_npoints": 1000,
+    "resonances": [
+        {
+            "Z_target": 1,
+            "A_target": 2,
+            "Z_projectile": 4,
+            "A_projectile": 7,
+            "Z_ejectile": 2,
+            "A_ejectile": 4,
+            "resonance_energy": 0.317,
+            "width_in": 0.004,
+            "width_out": 0.038,
+            "width_total": 0.058,
+            "spin_target": 1,
+            "spin_projectile": 1.5,
+            "spin_resonance": 2.5
+        },
+        {
+            "Z_target": 1,
+            "A_target": 2,
+            "Z_projectile": 4,
+            "A_projectile": 7,
+            "Z_ejectile": 1,
+            "A_ejectile": 1,
+            "resonance_energy": 0.317,
+            "width_in": 0.004,
+            "width_out": 0.012,
+            "width_total": 0.058,
+            "spin_target": 1,
+            "spin_projectile": 1.5,
+            "spin_resonance": 2.5
+        },
+        {
+            "Z_target": 1,
+            "A_target": 2,
+            "Z_projectile": 4,
+            "A_projectile": 7,
+            "Z_ejectile": 1,
+            "A_ejectile": 1,
+            "resonance_energy": 0.317,
+            "width_in": 0.004,
+            "width_out": 0.002,
+            "width_total": 0.058,
+            "spin_target": 1,
+            "spin_projectile": 1.5,
+            "spin_resonance": 2.5
+        }
+    ]
+}
