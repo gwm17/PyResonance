@@ -1,9 +1,10 @@
 {
-    "energy_min": 0.1,
-    "energy_max": 1.0,
+    "energy_min": 0.05,
+    "energy_max": 0.6,
     "energy_npoints": 1000,
     "resonances": [
         {
+            "name": "Rijal Peak",
             "Z_target": 1,
             "A_target": 2,
             "Z_projectile": 4,
@@ -19,6 +20,7 @@
             "spin_resonance": 2.5
         },
         {
+            "name": "Rijal Peak $^{8}$Be$2^{+}$",
             "Z_target": 1,
             "A_target": 2,
             "Z_projectile": 4,
@@ -34,6 +36,7 @@
             "spin_resonance": 2.5
         },
         {
+            "name":"Rijal Peak $^{8}$Be$0^{+}$",
             "Z_target": 1,
             "A_target": 2,
             "Z_projectile": 4,
@@ -44,6 +47,22 @@
             "width_in": 0.004,
             "width_out": 0.002,
             "width_total": 0.058,
+            "spin_target": 1,
+            "spin_projectile": 1.5,
+            "spin_resonance": 2.5
+        },
+        {
+            "name": "Nub",
+            "Z_target": 1,
+            "A_target": 2,
+            "Z_projectile": 4,
+            "A_projectile": 7,
+            "Z_ejectile": 1,
+            "A_ejectile": 1,
+            "resonance_energy": 0.148,
+            "width_in": 0.0035,
+            "width_out": 0.0315,
+            "width_total": 0.035,
             "spin_target": 1,
             "spin_projectile": 1.5,
             "spin_resonance": 2.5

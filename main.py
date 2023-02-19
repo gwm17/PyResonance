@@ -1,13 +1,15 @@
-from PyResonance.config import read_config, get_reaction_equation_latex
+from PyResonance.config import read_config, get_reaction_equation_latex, get_reaction_name
 from PyResonance.cross import calculate_cross_section_range
 import PyResonance
 
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 import inspect
 from pathlib import Path
 
+matplotlib.rcParams.update({'font.size': 22})
 def main(configfile: str, nucdatafile: Path):
     config = read_config(configfile, nucdatafile)
     if config is None or len(config.parameter_list) == 0:
@@ -15,7 +17,7 @@ def main(configfile: str, nucdatafile: Path):
         return
     
     energy_array = np.linspace(config.energy_min, config.energy_max, num=config.energy_npoints)
-    resonances = [(get_reaction_equation_latex(params), calculate_cross_section_range(params, energy_array)) for params in config.parameter_list]
+    resonances = [(get_reaction_name(params), calculate_cross_section_range(params, energy_array)) for params in config.parameter_list]
     fig, ax = plt.subplots(1, 1)
     total_cross_section = np.zeros(len(energy_array))
     for res in resonances:
